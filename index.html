@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Graph generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="./GraphGenerator.js" type="module" defer></script>
+</head>
+
+<body>
+    <div id="controls-button" data-opened="false">
+        <i class="fas fa-cogs fa-3x"></i>
+    </div>
+    <div id="controls" style="display: none;">
+        <form method="GET" action="">
+            <div class="form-group">
+                <label for="allowDisconnectedVertices">Allow Disconnected Vertices</label>
+                <input type="checkbox" id="allowDisconnectedVertices" name="allowDisconnectedVertices" />
+            </div>
+            <div class="form-group">
+                <label for="minRadius">Minimum radius</label>
+                <input type="number" min="1" id="minRadius" name="minRadius" />
+            </div>
+            <div class="form-group">
+                <label for="maxRadius">Maximum radius</label>
+                <input type="number" min="1" id="maxRadius" name="maxRadius" />
+            </div>
+            <div class="form-group">
+                <label for="minPosition">Minimum position</label>
+                <input type="number" id="minPosition" name="minPosition" />
+            </div>
+            <div class="form-group">
+                <label for="maxPosition">Maximum position</label>
+                <input type="number" id="maxPosition" name="maxPosition" />
+            </div>
+            <button type="submit">
+                <i class="fas fa-save fa-2x"></i>
+            </button>
+        </form>
+    </div>
+    <canvas id="canvas"></canvas>
+</body>
+
+</html>

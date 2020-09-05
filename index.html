@@ -7,6 +7,7 @@
     <title>Random Graph generator</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
     <script src="./GraphGenerator.js" type="module" defer></script>
 </head>
 
@@ -19,6 +20,10 @@
             <div class="form-group">
                 <label for="allowDisconnectedVertices">Allow Disconnected Vertices</label>
                 <input type="checkbox" id="allowDisconnectedVertices" name="allowDisconnectedVertices" />
+            </div>
+            <div class="form-group">
+                <label for="verticesCount">Vertices count</label>
+                <input type="number" min="1" id="verticesCount" name="verticesCount" />
             </div>
             <div class="form-group">
                 <label for="minRadius">Minimum radius</label>

@@ -1,4 +1,4 @@
-import { lineColor, arrowSize } from './Constants.js';
+import { lineColor } from './Constants.js';
 import { renderArrow, diffFromArrow } from './Helpers.js';
 
 export default class Edge {

@@ -4,6 +4,11 @@
     overflow: hidden;
 }
 
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: black;
+}
+
 #controls-button {
     display: flex;
     position: fixed;
@@ -35,15 +40,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-#submit-controls button[type=submit] {
+#controls button[type=submit] {
     width: 90%;
     display: block;
     margin: 0 auto;
     background-color: rgb(0, 119, 255);
 }
 
-#submit-controls button[type=submit] i {
+#controls button[type=submit] i {
     color: white;
+}
+
+#controls form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+}
+
+#controls input[type=checkbox] {
+    width: 30px;
+    height: 30px;
 }

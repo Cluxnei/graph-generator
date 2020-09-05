@@ -19,7 +19,7 @@ const graph = new Graph(vertices, edges);
 
 graph.generateRandomEdges(vertices.length - 1);
 if (!allowDisconnectedVertices) {
-    graph.removeDisconnectedVertices();
+    graph.replaceDisconnectedVertices();
 }
 
 window.onload = () => {
@@ -59,6 +59,7 @@ window.onload = () => {
         document.getElementById('maxRadius').value = radiusRange[1];
         document.getElementById('minPosition').value = positionRange[0];
         document.getElementById('maxPosition').value = positionRange[1];
+        document.getElementById('verticesCount').value = verticesCount;
     };
     fillSettingsValues();
 };
